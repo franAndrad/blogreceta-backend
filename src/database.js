@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
 
-const url = 'mongodb://localhost:27017/receta';
+require('dotenv').config()
+
+const url = process.env.SERVIDOR;
 mongoose.connect(url);
 
 const connection = mongoose.connection;
