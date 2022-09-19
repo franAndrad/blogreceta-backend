@@ -14,8 +14,7 @@ const recetaSchema = new Schema({
         minlength: 5,
     },
     imagen: {
-        type: String,
-        required: true,
+        type: String
     },
     ingredientes: {
         type: Array,
