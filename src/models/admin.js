@@ -15,6 +15,6 @@ const adminSchema = new Schema({
         maxlength: 15
     }
 });
-const Admin = mongoose.model('users', adminSchema);
+const Admin = mongoose.model('admins', adminSchema);
 
 export default Admin;
