@@ -4,6 +4,7 @@ import cors from 'cors';
 import './src/database';
 import  './src/routes/listarecetas.routes'
 import router from './src/routes/listarecetas.routes';
+import admin from './src/routes/admin.routes'
 
 const app = express();
 
@@ -18,3 +19,4 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
 app.use('/apireceta', router);
+app.use('/usersadmin',admin)
