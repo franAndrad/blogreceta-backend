@@ -11,8 +11,8 @@ const adminSchema = new Schema({
     password: {
         type: String,
         required: true,
-        minlength: 5,
-        maxlength: 15
+        minlength: 8,
+        maxlength: 16
     }
 });
 const Admin = mongoose.model('admins', adminSchema);

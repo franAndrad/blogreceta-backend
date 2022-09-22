@@ -19,4 +19,4 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
 app.use('/apireceta', router);
-app.use('/usersadmin',admin)
+app.use('/usersadmin', admin)
